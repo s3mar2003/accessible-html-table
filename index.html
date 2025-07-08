@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accessible Table Example</title>
+</head>
+<body>
+
+  <h2>What is scope</h2>
+  <p>
+
+ It is an attribute added to the (th) element in tables to specify whether the header applies to a row or a column.
+For example,scope="col" means it's a column header, and scope="row" means it's a row header.
+</p>
+
+
+<h2> how does it work to support accessibility:</h2>
+  <p>
+
+ 
+ When we define the scope,
+  tools like screen readers can understand the relationship between headers and data in the table,
+   making it easier for people who can't clearly see the table to understand the content.
+
+</p>
+
+
+  <table border="1" >
+   
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Grade</th>
+   
+    
+      <tr>
+        <th scope="row">Samar</th>
+        <td>21</td>
+        <td>Third</td>
+      </tr>
+      <tr>
+        <th scope="row">Layan</th>
+        <td>22</td>
+        <td>Second</td>
+      </tr>
+      <tr>
+        <th scope="row">Fahd</th>
+        <td>20</td>
+        <td>First</td>
+      </tr>
+  
+  </table>
+
+</body>
+</html>
